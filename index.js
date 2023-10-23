@@ -23,7 +23,7 @@ app.listen(PORT, function() {
 
 // Routes
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/public/view/category.html");
+    res.sendFile(__dirname + "/public/views/home.html");
 });
 
 app.get("/api/categories", function(req, res) {
@@ -70,5 +70,3 @@ app.get("/api/product/:name", function(req, res) {
         return res.send(rs);
     });
 });
-
-/* ---------------------------- */
